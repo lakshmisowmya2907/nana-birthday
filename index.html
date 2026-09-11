@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Nana ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:#0d0712;color:#fff;overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:28px 28px;
+}
+canvas{position:fixed;inset:0;pointer-events:none;z-index:20}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:70px 20px;position:relative}
+.card{max-width:850px;text-align:center;position:relative;z-index:2}
+.kicker{letter-spacing:5px;text-transform:uppercase;font:600 12px Arial,sans-serif;opacity:.7;margin-bottom:18px}
+h1{font-size:clamp(55px,14vw,125px);line-height:.9;text-shadow:0 8px 35px rgba(255,80,160,.3)}
+h2{font-size:clamp(36px,8vw,70px);margin-bottom:25px}
+p{font:18px/1.8 Arial,sans-serif;color:#eadfea;max-width:680px;margin:0 auto}
+.heart{color:#ff5b9d}
+.signature{margin-top:30px;font-size:25px;font-style:italic}
+button{
+  border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);
+  color:#fff;padding:15px 24px;border-radius:40px;cursor:pointer;
+  margin:12px 5px;font-size:15px;backdrop-filter:blur(8px);
+  transition:.3s;
+}
+button:hover{transform:translateY(-3px);background:rgba(255,255,255,.15)}
+.hero{background:radial-gradient(circle at 50% 35%,#5a163e 0,#1b0b25 38%,#0d0712 75%)}
+.scroll{margin-top:50px;font:12px Arial,sans-serif;letter-spacing:3px;opacity:.55;animation:bounce 1.7s infinite}
+@keyframes bounce{50%{transform:translateY(8px)}}
+.glow{position:absolute;width:240px;height:240px;border-radius:50%;background:#ff3f91;filter:blur(110px);opacity:.22}
+.glow.a{top:10%;left:5%}.glow.b{bottom:10%;right:5%;background:#9d5cff}
+.timeline{display:grid;gap:18px;margin-top:35px;text-align:left}
+.memory{
+ padding:22px;border-left:2px solid #ff5b9d;background:rgba(255,255,255,.045);
+ border-radius:0 18px 18px 0;
+}
+.memory strong{display:block;color:#ff9bc4;margin-bottom:7px;font:700 14px Arial,sans-serif;letter-spacing:1px}
+.quote{font-size:27px;line-height:1.45;margin:30px auto;font-style:italic}
+.envelope{
+ width:min(650px,94vw);padding:35px;border-radius:25px;
+ background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.035));
+ border:1px solid rgba(255,255,255,.14);box-shadow:0 25px 80px rgba(0,0,0,.35)
+}
+.hidden-message{display:none;margin-top:25px}
+.hidden-message.show{display:block;animation:fade .9s ease}
+@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+footer{padding:35px;text-align:center;font:13px Arial,sans-serif;opacity:.5}
+#musicStatus{font:13px Arial,sans-serif;opacity:.65;margin-top:10px}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+
+<section class="hero" id="home">
+ <div class="glow a"></div><div class="glow b"></div>
+ <div class="card">
+  <div class="kicker">A little surprise for you</div>
+  <h1>Nana<span class="heart">♥</span></h1>
+  <p style="margin-top:25px">Before you read anything else… just know that this little corner of the internet was made with a whole lot of love.</p>
+  <button onclick="openSurprise()">Open Your Surprise ✨</button>
+  <div class="scroll">SCROLL WITH LOVE ↓</div>
+ </div>
+</section>
+
+<section>
+ <div class="card">
+  <div class="kicker">12 • 09 • 2026</div>
+  <h2>Happy Birthday, Nana 🎂</h2>
+  <p>
+   Today is your day. A day to celebrate your smile, your presence,
+   your little ways of making ordinary moments feel special, and simply
+   the beautiful person you are.
+  </p>
+  <p class="quote">“Some birthdays are celebrated for a day. Some people are celebrated in your heart every day.”</p>
+  <div class="signature">Chinnu <span class="heart">❤️</span> Chitti</div>
+ </div>
+</section>
+
+<section>
+ <div class="card">
+  <div class="kicker">Our little story</div>
+  <h2>Years of Togetherness 🫶</h2>
+  <p>There isn't one perfect moment that explains us. It's all the tiny moments together that became something precious.</p>
+  <div class="timeline">
+   <div class="memory"><strong>THE LITTLE THINGS</strong>Every conversation, every laugh, every silly moment — somehow, they became memories worth keeping.</div>
+   <div class="memory"><strong>THE HARD DAYS</strong>Not every day was perfect, but every day taught us something about caring, understanding and staying.</div>
+   <div class="memory"><strong>THE BEAUTIFUL DAYS</strong>The moments that made us smile for no reason are the ones I hope we never forget.</div>
+   <div class="memory"><strong>AND STILL…</strong>Here we are, with more chapters to write, more memories to create, and more reasons to celebrate us.</div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="card">
+  <div class="kicker">For you, Nana</div>
+  <h2>You mean more than words can say.</h2>
+  <p>
+   Nana, thank you for being a part of my story. Thank you for the laughter,
+   the patience, the conversations, the memories and even the moments that
+   were difficult. Every little piece of our journey matters to me.
+  </p>
+  <p style="margin-top:22px">
+   I don't know exactly what the future will bring, but I know one thing:
+   I want to keep collecting beautiful moments with you.
+  </p>
+  <div class="signature">Always with love — Chitti ❤️</div>
+ </div>
+</section>
+
+<section>
+ <div class="card">
+  <div class="kicker">One last thing…</div>
+  <div class="envelope">
+   <div style="font-size:65px">💌</div>
+   <h2 style="font-size:42px;margin:10px 0">A Letter for Nana</h2>
+   <p>There is a little message waiting for you.</p>
+   <button onclick="reveal()">Read my heart ❤️</button>
+   <div class="hidden-message" id="letter">
+    <p>
+     Nana, on your birthday, I just want you to know how grateful I am
+     for every year, every memory and every little moment we have shared.
+     You have a special place in my heart that words can never completely
+     explain.
+     <br><br>
+     May this new year of your life bring you happiness, peace, success,
+     countless smiles and everything your heart wishes for.
+     <br><br>
+     And whenever you look back at this day, I hope you remember that
+     someone was smiling while creating this little surprise just for you.
+     <br><br>
+     <strong>Happy Birthday, Nana. ❤️</strong>
+    </p>
+    <div class="signature">Chinnu ❤️ Chitti</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="hero">
+ <div class="card">
+  <div style="font-size:75px">🎂</div>
+  <div class="kicker">The beginning of another beautiful year</div>
+  <h2>Happy Birthday, Nana! ❤️</h2>
+  <p>May your smile stay bright, your dreams grow bigger, and our memories keep getting sweeter.</p>
+  <div class="signature">Chinnu <span class="heart">❤️</span> Chitti</div>
+  <button onclick="celebrate()">Celebrate Again 🎉</button>
+  <div id="musicStatus">Music is optional — tap the button if you want to add your own song.</div>
+ </div>
+</section>
+
+<footer>Made with love for Nana • 12 September 2026</footer>
+
+<script>
+function openSurprise(){
+  document.querySelectorAll('section')[1].scrollIntoView({behavior:'smooth'});
+  celebrate();
+}
+function reveal(){
+  document.getElementById('letter').classList.add('show');
+  celebrate();
+}
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');
+let pieces=[];
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight}
+addEventListener('resize',resize);resize();
+function celebrate(){
+  for(let i=0;i<180;i++) pieces.push({
+    x:innerWidth/2+(Math.random()-.5)*80,y:innerHeight*.35,
+    vx:(Math.random()-.5)*10,vy:Math.random()*-10-3,
+    s:Math.random()*8+3,r:Math.random()*Math.PI
+  });
+  if(!animate.running){animate.running=true;requestAnimationFrame(animate)}
+}
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  pieces.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;p.vy+=.22;p.r+=.12;
+    ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);
+    ctx.fillStyle=['#ff5b9d','#ffd166','#a78bfa','#ffffff'][Math.floor(Math.random()*4)];
+    ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s*.55);ctx.restore();
+  });
+  pieces=pieces.filter(p=>p.y<canvas.height+30);
+  if(pieces.length) requestAnimationFrame(animate); else animate.running=false;
+}
+</script>
+</body>
+</html>
